@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #28292a
+}
+.board {
+    display: flex;
+    gap:20px;
+}
+.column {
+    background-color: #393e46;
+    width: 300px;
+    min-height: 400px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+.column h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.tasks {
+    min-height: 400px;
+}
+.task-input {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solod #ccc;
+    margin-top:10px;
+}
+.add-task {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d89216;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.add-task:hover {
+    background-color: #96650f;
+}
+.card {
+    background-color: #e1d89f;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: black;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+
+}
+.context-menu ul li {
+    list-style: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: #333;
+    
+}
+.task-date {
+    text-align: end;
+    display: block;
+    font-style: italic;
+    color: #000;
+    font-size: 12px;
+}
